@@ -19,7 +19,7 @@ Anti-Ransomware Kernel Driver
 
 ## How it Works
 
-* ***DartFilter** intercept every _PreCreateFile_, _PreWriteFile_ and _PreSetFileInformation_ operation on the Honeypot
+* ***DartFilter*** intercept every _PreCreateFile_, _PreWriteFile_ and _PreSetFileInformation_ operation on the Honeypot
 * Whenever a ransomware or any process tries to perform one of the operations mentioned in our Honeypot, the process gets terminated and returns with an access denied status
 
 ## Installation
