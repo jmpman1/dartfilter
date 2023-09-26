@@ -1,6 +1,6 @@
 # 🎯 DartFilter 🎯
 
-![Dart Logo](.images/DartLogo.png)
+![Dart Logo](./images/DartLogo.png)
 
 Anti-Ransomware Kernel Driver
 
