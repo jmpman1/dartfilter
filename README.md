@@ -58,4 +58,4 @@ sc stop DartFilter
 
 ## Usage
 
-To create the Honeypot, make sure to add decoy files in a folder that contains *"_dart"* added to it's name. If you'd like to, feel free to download the Honeypot folder in this repository.
+To create the Honeypot, make sure to add decoy files in a folder that contains *"_darthoney"* added to it's name. If you'd like to, feel free to download the Honeypot folder in this repository.
