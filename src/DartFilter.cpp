@@ -24,7 +24,7 @@ NTSTATUS terminateProcess(ULONG processID)
 	HANDLE processH;
 	PEPROCESS processPE;
 
-	// procura o processo pelo PID
+	// where is everyone hiding?
 	status = PsLookupProcessByProcessId(ULongToHandle(processID), &processPE);
 	
 	if (!NT_SUCCESS(status))
@@ -33,7 +33,7 @@ NTSTATUS terminateProcess(ULONG processID)
 		return status;
 	}
 
-	// abre o processo (no caso objeto) pelo ponteiro
+	// opens the process handle to terminate the process
 	status = ObOpenObjectByPointer(processPE, 0, nullptr, 0, NULL, KernelMode, &processH);
 
 	if (!NT_SUCCESS(status))
@@ -42,12 +42,13 @@ NTSTATUS terminateProcess(ULONG processID)
 		return status;
 	}
 
-	// termina o processo encontrado e aberto pelo seu ponteiro
+	// caught you!
 	status = ZwTerminateProcess(processH, STATUS_ACCESS_DENIED);
 
 	if (!NT_SUCCESS(status))
 	{
 		DbgPrint("ZwTerminateProcess: Could not termminate process.");
+		ZwClose(processH);
 		return status;
 	}
 
