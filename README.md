@@ -66,7 +66,7 @@ To create the Honeypot, make sure to add decoy files in a folder that contains *
 - [Windows Driver Kit (WDK)](https://go.microsoft.com/fwlink/?linkid=2166289)
 - [Windows SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
 - [Build tools for Visual Studio](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16)
-  - After installing Visual Studio 2019, click on Modify > Individual Components and Search for "Spectre-mitigated". which is another required add-on to build ***DartFilter***
+  - After installing Visual Studio 2019, click on Modify > Individual Components and Search for "Spectre-mitigated". When done searching, scroll down until we find the "MSVC v142 - VS 2019 C++ x64/x86 Spectre-mitigated libs (latest)", which is another required add-on to build ***DartFilter***
 
     ![Installing MSVC Spectre-mitigated](./images/spectremitigated.png)
 
