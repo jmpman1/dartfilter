@@ -10,6 +10,7 @@ Anti-Ransomware Kernel Driver
 - [How It Works](#how-it-works)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Dependencies](#build-dependencies)
 
 ## Introduction
 
@@ -59,3 +60,16 @@ sc stop DartFilter
 ## Usage
 
 To create the Honeypot, make sure to add decoy files in a folder that contains *"_darthoney"* added to it's name. If you'd like to, feel free to download the Honeypot folder in this repository.
+
+## Build Dependencies
+
+- [Windows Driver Kit (WDK)](https://go.microsoft.com/fwlink/?linkid=2166289)
+- [Windows SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
+- [Build tools for Visual Studio](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16)
+  - After installing Visual Studio 2019, click on Modify > Individual Components and Search for "Spectre-mitigated". which is another required add-on to build ***DartFilter***
+
+    ![Installing MSVC Spectre-mitigated](./images/spectremitigated.png)
+
+### Optional
+
+- [DebugView](https://learn.microsoft.com/en-us/sysinternals/downloads/debugview) to see debug messages of the driver
