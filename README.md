@@ -14,7 +14,7 @@ Anti-Ransomware Kernel Driver
 
 ## Introduction
 
-***DartFilter*** is a Windows Kernel File System Minifilter driver that stops Ransomware activity through a Honeypot detection method, monitoring it's files.
+***DartFilter*** is a Windows Kernel Minifilter driver that stops Ransomware activity through a Honeypot detection method, monitoring it's files.
 
 > NOTE: The driver was tested on Windows 10 Education Build 19041 and it's likely to work on new and recent Windows 10 versions.
 
